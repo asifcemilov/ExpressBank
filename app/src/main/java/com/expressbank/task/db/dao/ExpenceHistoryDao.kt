@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface ExpenceHistoryDao {
 
-    @Query("SELECT * FROM expenses_history_table WHERE expance_id=:expeceId AND  cost LIKE '%' || :searchQuery ||  '%' ")
+    @Query("SELECT * FROM expenses_history_table WHERE expance_id=:expeceId AND   cost_detail||cost  LIKE '%' || :searchQuery ||  '%' ")
     fun getExpensesHistoryAsFlow(expeceId: Int, searchQuery: String): Flow<List<ExpenseHistory>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

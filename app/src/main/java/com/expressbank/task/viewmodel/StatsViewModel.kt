@@ -83,13 +83,13 @@ class StatsViewModel @Inject constructor(
                         ExpenseHistory(
                             expanseId,
                             it.toFloat(),
-                            " $categoryName ",
+                            " $categoryName Cost",
                             (10..23).random().toString()
                                 .plus(":")
                                 .plus((10..59).random())
                                 .plus(
                                     "  ${randDayIterator.next()}." +
-                                            (if (month.id < 10) "0${month.id}"
+                                            (if (month.id < 10) "0${month.id}."
                                             else "0${month.id}.") +
                                             year.year
                                 )

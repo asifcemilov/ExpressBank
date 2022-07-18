@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.skydoves:powerspinner:1.2.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.cache/tooling/gradle/caches/transforms-3/2470d68c140e2337f8805eb1ab369336/transformed/jetified-powerspinner-1.2.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.cache/tooling/gradle/caches/transforms-3/2470d68c140e2337f8805eb1ab369336/transformed/jetified-powerspinner-1.2.3/res" />
-      <root url="file://$USER_HOME$/.cache/tooling/gradle/caches/transforms-3/2470d68c140e2337f8805eb1ab369336/transformed/jetified-powerspinner-1.2.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2470d68c140e2337f8805eb1ab369336/transformed/jetified-powerspinner-1.2.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2470d68c140e2337f8805eb1ab369336/transformed/jetified-powerspinner-1.2.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2470d68c140e2337f8805eb1ab369336/transformed/jetified-powerspinner-1.2.3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.cache/tooling/gradle/caches/modules-2/files-2.1/com.github.skydoves/powerspinner/1.2.3/484a25db7511552bd9ca0dd269e89988a6a3a9a9/powerspinner-1.2.3-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.skydoves/powerspinner/1.2.3/484a25db7511552bd9ca0dd269e89988a6a3a9a9/powerspinner-1.2.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.cache/tooling/gradle/caches/modules-2/files-2.1/com.github.skydoves/powerspinner/1.2.3/efb24db22894e23e55be44e057e4f22999cd0917/powerspinner-1.2.3-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.skydoves/powerspinner/1.2.3/efb24db22894e23e55be44e057e4f22999cd0917/powerspinner-1.2.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

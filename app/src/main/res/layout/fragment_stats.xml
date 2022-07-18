@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    app:layoutDescription="@xml/fragment_stats_scene"
+    tools:context=".ui.Stats">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:contentDescription="@string/back_button"
+            android:minHeight="48dp"
+            android:src="?attr/homeAsUpIndicator"
+            app:tint="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/header"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ddCardsLay"
+        style="@style/DropdownMenu"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <AutoCompleteTextView
+            android:id="@+id/ddCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:bufferType="spannable"
+            android:drawableStart="@drawable/dropdown_card_icon"
+            android:inputType="none"
+            android:drawablePadding="16dp"
+            android:maxHeight="80dp"
+            android:paddingVertical="30dp"
+            android:spinnerMode="dropdown"
+            android:textSize="16sp"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ddDatesLay"
+        style="@style/DropdownMenu"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/ddCardsLay"
+        app:layout_constraintVertical_chainStyle="packed">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/ddYears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:bufferType="spannable"
+            android:inputType="none"
+            android:maxHeight="60dp"
+            android:paddingVertical="20dp"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ddMonthsLay"
+        style="@style/DropdownMenu"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/ddDatesLay"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/ddDatesLay"
+        app:layout_constraintTop_toTopOf="@+id/ddDatesLay">
+
+        <AutoCompleteTextView
+            android:id="@+id/ddMonths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:bufferType="spannable"
+            android:dropDownHeight="400dp"
+            android:inputType="none"
+            android:maxHeight="60dp"
+            android:paddingVertical="20dp"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_edge_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ddDatesLay">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/expencesValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="1 300 000"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/incomingsValue"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/incomingsValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1 700 000"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/expencesValue"
+                app:layout_constraintEnd_toStartOf="@+id/cashback_value"
+                app:layout_constraintStart_toEndOf="@+id/expencesValue" />
+
+            <TextView
+                android:id="@+id/cashback_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="100 500"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/incomingsValue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/incomingsValue" />
+
+
+            <TextView
+                android:id="@+id/expences"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text1"
+                android:textAlignment="center"
+                android:textColor="@color/text_color1"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/incomings"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expencesValue" />
+
+            <TextView
+                android:id="@+id/incomings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text2"
+                android:textAlignment="center"
+                android:textColor="@color/text_color1"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/expences"
+                app:layout_constraintEnd_toStartOf="@+id/cashback"
+                app:layout_constraintStart_toEndOf="@+id/expences" />
+
+            <TextView
+                android:id="@+id/cashback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text3"
+                android:textAlignment="center"
+                android:textColor="@color/text_color1"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/expences"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/incomings" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="16dp"
+                app:layout_constraintDimensionRatio="W,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expences" />
+
+            <include
+                android:id="@+id/pieChartHoleView"
+                layout="@layout/piechart_hole_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="@+id/pieChart"
+                app:layout_constraintEnd_toEndOf="@+id/pieChart"
+                app:layout_constraintStart_toStartOf="@+id/pieChart"
+                app:layout_constraintTop_toTopOf="@+id/pieChart" />
+
+            <TextView
+                android:id="@+id/categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catagories"
+                android:layout_marginHorizontal="16dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pieChart" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categoryRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/categories"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

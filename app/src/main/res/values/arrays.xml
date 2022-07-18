@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--Dropdowns data-->
+
+    <string-array name="cards">
+        <item>Expresso MC</item>
+        <item>Digital Card</item>
+        <item>Expresso VI</item>
+    </string-array>
+
+    <string-array name="cardNumbers">
+        <item>4369 2452 7253 2523</item>
+        <item>5103 2875 2839 9238</item>
+        <item>5213 2932 3489 2935</item>
+    </string-array>
+
+
+    <string-array name="years">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+
+    <string-array name="months">
+        <item> January </item>
+        <item> February </item>
+        <item> March </item>
+        <item> April </item>
+        <item> May </item>
+        <item> June </item>
+        <item> July </item>
+        <item> August </item>
+        <item> September </item>
+        <item> October </item>
+        <item> November </item>
+        <item> December </item>
+    </string-array>
+
+
+    <!--Category-->
+
+    <string-array name="categories">
+        <item> Airlines </item>
+        <item> Rent a Car </item>
+        <item> Transport </item>
+        <item> Hotels and Motels</item>
+        <item> Cars and Vehicles </item>
+        <item> Government Services </item>
+        <item> Personal Services </item>
+        <item> Professional Services </item>
+        <item> Business Services </item>
+        <item> Repair Services </item>
+        <item> Clothing Store </item>
+        <item> Sale by Mail or Telephone </item>
+        <item> Entertainment </item>
+        <item> Wholesale Suppliers and Manufacturers </item>
+        <item> Membership Organizations </item>
+        <item> Cashout </item>
+        <item> Money Transfers </item>
+        <item> Others </item>
+        <item> Contract Services </item>
+        <item> Other Services </item>
+        <item> Retail </item>
+        <item> Other Stores </item>
+        <item> Health </item>
+    </string-array>
+
+    <integer-array name="catagoriesColor">
+
+        <item>@color/airlines</item>
+        <item>@color/rentacar</item>
+        <item>@color/hotelsandmotels</item>
+        <item>@color/transport</item>
+        <item>@color/carsandvehicles</item>
+        <item>@color/governmentservices</item>
+        <item>@color/personalservices</item>
+        <item>@color/professionalservices</item>
+        <item>@color/businessservices</item>
+        <item>@color/repairservices</item>
+        <item>@color/clothingstore</item>
+        <item>@color/mailortelephone</item>
+        <item>@color/entertainment</item>
+        <item>@color/suppliersmanufacturers</item>
+        <item>@color/membershiporganizations</item>
+        <item>@color/cashout</item>
+        <item>@color/moneytransfers</item>
+        <item>@color/others</item>
+        <item>@color/contractservices</item>
+        <item>@color/otherservices</item>
+        <item>@color/retail</item>
+        <item>@color/otherstores</item>
+        <item>@color/health</item>
+
+    </integer-array>
+
+
+
+<integer-array name="catagoriesDrawable" >
+
+    <item>@drawable/ic_plane</item>
+    <item>@drawable/ic_car_rental</item>
+    <item>@drawable/ic_bed</item>
+    <item>@drawable/ic_bus</item>
+    <item>@drawable/ic_car</item>
+    <item>@drawable/ic_government</item>
+    <item>@drawable/ic_profile</item>
+    <item>@drawable/ic_profesional_profile</item>
+    <item>@drawable/ic_briefcase</item>
+    <item>@drawable/ic_repair</item>
+    <item>@drawable/ic_shirt</item>
+    <item>@drawable/ic_phone_mail</item>
+    <item>@drawable/ic_popcorn</item>
+    <item>@drawable/ic_wholesale</item>
+    <item>@drawable/ic_group</item>
+    <item>@drawable/ic_cashout</item>
+    <item>@drawable/ic_transfer</item>
+    <item>@drawable/ic_others</item>
+    <item>@drawable/ic_contract</item>
+    <item>@drawable/ic_setting</item>
+    <item>@drawable/ic_retail</item>
+    <item>@drawable/ic_store</item>
+    <item>@drawable/ic_health</item>
+
+</integer-array>
+
+
+
+
+
+
+</resources>

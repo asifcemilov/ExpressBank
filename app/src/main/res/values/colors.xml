@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">@null</color>
+    <color name="transparent1">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="page_background">#F5F5F5</color>
+    <color name="text_color1">#F58220</color>
+    <color name="text_color2">#231F20</color>
+
+    <!--Category colors-->
+
+    <color name="airlines">#FF4BAFF8</color>
+    <color name="rentacar">#FF9B2FF5</color>
+    <color name="hotelsandmotels">#FF5723E1</color>
+    <color name="transport">#FFC3291C</color>
+    <color name="carsandvehicles">#FF3255F4</color>
+    <color name="governmentservices">#FF9D8980</color>
+    <color name="personalservices">#FF50B5D0</color>
+    <color name="professionalservices">#FF757575</color>
+    <color name="businessservices">#FF212121</color>
+    <color name="repairservices">#FF55BCA6</color>
+    <color name="clothingstore">#FFE1325A</color>
+    <color name="mailortelephone">#FFCF54F3</color>
+    <color name="entertainment">#FFFAA61A</color>
+    <color name="suppliersmanufacturers">#FF4A352F</color>
+    <color name="membershiporganizations">#FFB0B347</color>
+    <color name="cashout">#FF5AC461</color>
+    <color name="moneytransfers">#FFF9C20A</color>
+    <color name="others">#FFF58220</color>
+    <color name="contractservices">#FFB9ABA5</color>
+    <color name="otherservices">#FF5E6DBA</color>
+    <color name="retail">#FFACDB30</color>
+    <color name="otherstores">#E35C33</color>
+    <color name="health">#FFFF001F</color>
+
+
+</resources>

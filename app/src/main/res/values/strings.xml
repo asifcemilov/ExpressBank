@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Express Bank</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text1"><u>Expences</u></string>
+    <string name="text2"><u>Incomings</u></string>
+    <string name="text3"><u>Cashback</u></string>
+    <string name="text4"><u>View Statement</u></string>
+    <string name="percentage">%</string>
+    <string name="azn"> AZN</string>
+    <string name="dot">·</string>
+    <string name="back_button">Back Button</string>
+    <string name="header">Stats</string>
+    <string name="azn_month">AZN / month</string>
+
+
+</resources>

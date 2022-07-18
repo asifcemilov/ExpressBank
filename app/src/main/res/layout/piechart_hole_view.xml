@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="40dp"
+    android:animateLayoutChanges="true"
+    android:visibility="visible"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/hole_icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:animateLayoutChanges="true"
+        android:alpha="0.65"
+        android:src="@mipmap/expressbank_logo_foreground"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/hole_text_layout"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/holeCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:maxLines="3"
+            android:maxWidth="200dp"
+            android:textColor="@color/text_color2"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/hole_expanse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/holeCategoryName"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="200dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_color2"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hole_valuta_per_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hole_expanse"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/text_color2"
+            android:maxWidth="200dp"
+            android:text="@string/azn_month"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/viewStatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hole_valuta_per_month"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:maxWidth="200dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="16sp"
+            android:textColor="@color/text_color2"
+            android:text="@string/text4"/>
+    </RelativeLayout>
+
+</RelativeLayout>

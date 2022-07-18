@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Minus (-) how much dp you gave in the stroke width from left right-->
+    <item
+        android:id="@+id/roundCorner"
+        android:right="-30dp"
+        android:top="-30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent"/>
+            <stroke
+                android:width="9dp"
+                android:color="#C3291C" />
+            <corners android:bottomLeftRadius="500dp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:paddingHorizontal="16dp"
+    android:focusable="true"
+    android:background="@drawable/click_background"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/categoryIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_bus"
+        app:layout_constraintBottom_toBottomOf="@id/categoryPercentIndicator"
+        app:layout_constraintEnd_toEndOf="@id/categoryPercentIndicator"
+        app:layout_constraintStart_toStartOf="@id/categoryPercentIndicator"
+        app:layout_constraintTop_toTopOf="@id/categoryPercentIndicator"
+        app:tint="@color/black" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/categoryPercentIndicator"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_centerInParent="true"
+        android:max="100"
+        android:paddingVertical="10dp"
+        android:progress="100"
+        app:indicatorColor="@color/design_default_color_error"
+        app:indicatorSize="43dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="#F5F5F5"
+        app:trackCornerRadius="10dp"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/categoryPercentIndicator"
+        android:maxLines="3"
+        android:text="Airlines"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryPercentIndicator"
+        app:layout_constraintEnd_toStartOf="@id/categoryPercent"
+        app:layout_constraintStart_toEndOf="@id/categoryPercentIndicator"
+        app:layout_constraintTop_toTopOf="@id/categoryPercentIndicator" />
+
+
+    <TextView
+        android:id="@+id/categoryPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="22%"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryPercentIndicator"
+        app:layout_constraintEnd_toStartOf="@+id/dot"
+        app:layout_constraintTop_toTopOf="@id/categoryPercentIndicator" />
+
+
+    <TextView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/dot"
+        android:textColor="@color/text_color1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryPercentIndicator"
+        app:layout_constraintEnd_toStartOf="@+id/categoryExpenceAmount"
+        app:layout_constraintTop_toTopOf="@id/categoryPercentIndicator" />
+
+    <TextView
+        android:id="@+id/categoryExpenceAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1500 AZN"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryPercentIndicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/categoryPercentIndicator" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        app:dividerColor="#DADADA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/categoryPercentIndicator"
+        app:layout_constraintTop_toBottomOf="@+id/categoryPercentIndicator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
